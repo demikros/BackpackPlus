@@ -1,0 +1,43 @@
+default-rows: 3
+max-rows: 6
+default-pages: 1
+max-pages: 5
+drop-overflow: true
+flush-interval-seconds: 300
+
+blacklisted-materials:
+  - SHULKER_BOX
+  - WHITE_SHULKER_BOX
+  - ORANGE_SHULKER_BOX
+  - MAGENTA_SHULKER_BOX
+  - LIGHT_BLUE_SHULKER_BOX
+  - YELLOW_SHULKER_BOX
+  - LIME_SHULKER_BOX
+  - PINK_SHULKER_BOX
+  - GRAY_SHULKER_BOX
+  - LIGHT_GRAY_SHULKER_BOX
+  - CYAN_SHULKER_BOX
+  - PURPLE_SHULKER_BOX
+  - BLUE_SHULKER_BOX
+  - BROWN_SHULKER_BOX
+  - GREEN_SHULKER_BOX
+  - RED_SHULKER_BOX
+  - BLACK_SHULKER_BOX
+
+backpack-title: "<gold><bold>Backpack</bold></gold> <gray>| Page {page}</gray>"
+enderchest-title: "<aqua><bold>Ender Chest</bold></aqua> <gray>| {player}</gray>"
+
+messages:
+  no-permission: "<red>You do not have permission to do that.</red>"
+  player-not-found: "<red>Player <yellow>{player}</yellow> not found.</red>"
+  backpack-opened: "<green>Opened backpack page <yellow>{page}</yellow>.</green>"
+  backpack-sorted: "<green>Backpack page sorted.</green>"
+  invalid-page: "<red>Invalid page number. You have <yellow>{max}</yellow> page(s).</red>"
+  blacklisted-material: "<red>That item cannot be placed in a backpack.</red>"
+  no-nesting: "<red>You cannot place a backpack inside a backpack.</red>"
+  overflow-dropped: "<yellow>Some items did not fit and were dropped at your feet.</yellow>"
+  config-reloaded: "<green>BackpackPlus configuration reloaded.</green>"
+  enderchest-opened: "<green>Opened ender chest for <yellow>{player}</yellow>.</green>"
+  usage-backpack: "<red>Usage: /backpack [page] | open <player> [page] | sort | pages | reload</red>"
+  usage-enderchest: "<red>Usage: /enderchest [player]</red>"
+  pages-info: "<green>You have <yellow>{pages}</yellow> page(s) with <yellow>{rows}</yellow> row(s) each.</green>"

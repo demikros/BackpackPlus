@@ -1,0 +1,65 @@
+name: BackpackPlus
+version: 1.0.0
+api-version: '1.21'
+main: dev.craftforge.backpackplus.BackpackPlus
+author: CraftForge
+description: Virtual per-player storage with permission-tiered sizes, multiple named pages, portable ender chest access and a sorting utility.
+
+commands:
+  backpack:
+    description: Opens your virtual backpack.
+    usage: /backpack [page] | open <player> [page] | sort | pages | reload
+    aliases: [bp, pack]
+    permission: backpackplus.use
+  enderchest:
+    description: Opens your ender chest or another player's ender chest.
+    usage: /enderchest [player]
+    aliases: [ec]
+    permission: backpackplus.enderchest
+
+permissions:
+  backpackplus.use:
+    description: Allows opening own backpack.
+    default: true
+  backpackplus.admin:
+    description: Allows opening other players' backpacks and using reload.
+    default: op
+  backpackplus.enderchest:
+    description: Allows opening own ender chest via /ec.
+    default: true
+  backpackplus.enderchest.others:
+    description: Allows opening other players' ender chests.
+    default: op
+  backpackplus.rows.1:
+    description: Grants a 1-row backpack.
+    default: false
+  backpackplus.rows.2:
+    description: Grants a 2-row backpack.
+    default: false
+  backpackplus.rows.3:
+    description: Grants a 3-row backpack.
+    default: true
+  backpackplus.rows.4:
+    description: Grants a 4-row backpack.
+    default: false
+  backpackplus.rows.5:
+    description: Grants a 5-row backpack.
+    default: false
+  backpackplus.rows.6:
+    description: Grants a 6-row backpack.
+    default: op
+  backpackplus.pages.1:
+    description: Grants access to 1 backpack page.
+    default: true
+  backpackplus.pages.2:
+    description: Grants access to 2 backpack pages.
+    default: false
+  backpackplus.pages.3:
+    description: Grants access to 3 backpack pages.
+    default: false
+  backpackplus.pages.4:
+    description: Grants access to 4 backpack pages.
+    default: false
+  backpackplus.pages.5:
+    description: Grants access to 5 backpack pages.
+    default: op
